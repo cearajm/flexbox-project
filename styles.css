@@ -1,0 +1,180 @@
+body {
+    font-family: cursive;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body * {
+    flex-shrink: 0;
+}
+
+
+body > * {
+    /* padding: 0 300px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.introduction, .members, .quote {
+    height: 300px;
+}
+
+
+.header {
+    background-color: lightblue;
+    height: 80px;
+}
+
+.header.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .logo, .header .left {
+    flex: 1 0 100%;
+}
+
+ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    gap: 30px;
+    list-style-type: none;
+    justify-content: flex-end;
+    
+}
+
+.introduction {
+    background-color: lightgreen;
+}
+
+.introduction.content {
+    display: flex;
+    height: 180px;
+    gap: 30px;
+}
+
+.introduction .right {
+    background-color: aliceblue;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.introduction .left {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-around;
+    
+}
+
+.introduction .title {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+button {
+    width: fit-content;
+    padding: 8px 16px;
+    flex: 0 1 auto;
+}
+
+.members {
+    background-color: peachpuff;
+}
+
+.members.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.members .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    font-weight: 900;
+    font-size: 22px;
+}
+
+.members .images {
+    display: flex;
+    gap: 40px;
+    flex: 3 0 0;
+}
+
+.members .image {
+    background-color: lightblue;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quote.panel {
+    background-color: lavender;
+}
+
+.quote {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    
+
+}
+
+.quote .text {
+    display: flex;
+    flex-shrink: 0;
+    font-style: italic;
+    font-size: 25px;
+    min-width: 100%;
+    white-space: nowrap;
+    
+}
+
+.quote .name {
+    font-weight: 900;
+    font-size: 20px;
+    align-self: flex-end;
+}
+
+.banner-container {
+    background-color: lightpink;
+    height: 250px;
+}
+
+.banner {
+    background-color: rgb(245, 109, 131);
+    display: flex;
+    gap: 60px;
+    padding: 40px 60px;
+    margin: 0 300px;
+    color: white;
+}
+
+.banner .title {
+    font-weight: 900px;
+    font-size: 20px;
+}
+
+.banner button {
+    background-color: rgb(245, 109, 131);
+    color: white;
+    border-color: white;
+    border-style: double;
+}
+
+.footer {
+    background-color: skyblue;
+    height: 80px;
+}
